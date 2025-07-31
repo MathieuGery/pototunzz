@@ -40,7 +40,7 @@ export default function RegisterPage() {
       if (error) {
         setError(typeof error === 'object' && error !== null && 'message' in error ? error.message as string : 'Erreur d&apos;inscription')
       } else {
-        setSuccess('Compte créé ! Vérifiez vos emails pour valider votre compte.')
+        setSuccess('Compte créé !')
         setTimeout(() => router.push('/'), 2000)
       }
     } catch (err) {
@@ -50,7 +50,7 @@ export default function RegisterPage() {
     
     if (error) setError(error)
     else {
-      setSuccess('Compte créé ! Vérifiez vos emails pour valider votre compte.')
+      setSuccess('Compte créé !')
       setTimeout(() => router.push('/'), 2000)
     }
   }
