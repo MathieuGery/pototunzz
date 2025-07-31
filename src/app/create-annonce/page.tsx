@@ -113,7 +113,7 @@ export default function CreateAnnoncePage() {
         
         {imagePreview && (
           <div className="mt-2">
-            <p className="text-sm font-medium mb-1">Aperçu de l'image :</p>
+            <p className="text-sm font-medium mb-1">Aperçu de l&apos;image :</p>
             <img 
               src={imagePreview} 
               alt="Aperçu" 

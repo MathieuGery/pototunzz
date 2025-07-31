@@ -18,12 +18,12 @@ export default function RegisterPage() {
     setSuccess(null)
     
     if (!username.trim()) {
-      setError('Le nom d\'utilisateur est requis')
+      setError('Le nom d&apos;utilisateur est requis')
       return
     }
 
     try {
-      // Vérifier si le nom d'utilisateur existe déjà (cette étape sera gérée par la contrainte UNIQUE dans Supabase)
+      // Vérifier si le nom d&apos;utilisateur existe déjà (cette étape sera gérée par la contrainte UNIQUE dans Supabase)
       
       const { error, data } = await supabase.auth.signUp({ 
         email, 
@@ -38,14 +38,14 @@ export default function RegisterPage() {
       console.log('Inscription:', { error, data })
       
       if (error) {
-        setError(typeof error === 'object' && error !== null && 'message' in error ? error.message as string : 'Erreur d\'inscription')
+        setError(typeof error === 'object' && error !== null && 'message' in error ? error.message as string : 'Erreur d&apos;inscription')
       } else {
         setSuccess('Compte créé ! Vérifiez vos emails pour valider votre compte.')
         setTimeout(() => router.push('/'), 2000)
       }
     } catch (err) {
-      console.error('Erreur d\'inscription:', err)
-      setError('Une erreur est survenue lors de l\'inscription')
+      console.error('Erreur d&apos;inscription:', err)
+      setError('Une erreur est survenue lors de l&apos;inscription')
     }
     
     if (error) setError(error)
@@ -61,7 +61,7 @@ export default function RegisterPage() {
         <h1 className="text-2xl font-bold mb-4 text-black">Créer un compte</h1>
         <input
           type="text"
-          placeholder="Nom d'utilisateur"
+          placeholder="Nom d&apos;utilisateur"
           value={username}
           onChange={e => setUsername(e.target.value)}
           className="w-full p-2 border border-gray-800 rounded focus:border-black focus:ring-1 focus:ring-black focus:outline-none"
