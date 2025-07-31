@@ -75,7 +75,7 @@ export default function CreateAnnoncePage() {
         </div>
         
         <div>
-          <label htmlFor="prix" className="block text-black font-medium mb-1">Prix (€)</label>
+          <label htmlFor="prix" className="block text-black font-medium mb-1">Prix (Potothunes)</label>
           <input
             id="prix"
             type="number"

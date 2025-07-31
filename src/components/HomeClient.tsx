@@ -139,7 +139,7 @@ export default function HomeClient() {
               <h2 className="text-xl font-semibold text-black">{annonce.titre}</h2>
               <p className="text-gray-800 mb-2">{annonce.description}</p>
               {annonce.prix && (
-                <p className="text-lg font-semibold text-black mb-2">{annonce.prix.toFixed(2)} Pototune(s)</p>
+                <p className="text-lg font-semibold text-black mb-2">{annonce.prix.toFixed(2)} Potothune(s)</p>
               )}
               <div className="flex justify-between items-center">
                 <div className="text-sm text-gray-600">Publié le {new Date(annonce.created_at).toLocaleDateString()}</div>
