@@ -55,8 +55,8 @@ export default function HomeClient() {
         annonce.id === id ? { ...annonce, sold: true } : annonce
       ))
     } catch (error) {
-      console.error('Erreur lors du marquage de l\'annonce comme vendue:', error)
-      alert('Erreur lors du marquage de l\'annonce comme vendue.')
+      console.error('Erreur lors du marquage de l&apos;annonce comme vendue:', error)
+      alert('Erreur lors du marquage de l&apos;annonce comme vendue.')
     } finally {
       setIsDeleting(false)
     }

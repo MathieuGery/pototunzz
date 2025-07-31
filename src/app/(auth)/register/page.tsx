@@ -48,7 +48,7 @@ export default function RegisterPage() {
       setError('Une erreur est survenue lors de l\'inscription')
     }
     
-    if (error) setError(error.message)
+    if (error) setError(error)
     else {
       setSuccess('Compte créé ! Vérifiez vos emails pour valider votre compte.')
       setTimeout(() => router.push('/'), 2000)
